@@ -9,7 +9,7 @@ services:
           - dvwa
 
   fast:
-    image: wallarm-dkr-dev.jfrog.io/wallarm-fast-node:feature-FAST-1942-node-name
+    image:  wallarm-dkr-dev.jfrog.io:443/wallarm-fast-node:feature-FAST-1942-node-name
     environment:
       WALLARM_API_TOKEN: ${WALLARM_API_TOKEN}
       CI_MODE: recording
