@@ -14,6 +14,11 @@ services:
       WALLARM_API_TOKEN: ${WALLARM_API_TOKEN}
       CI_MODE: recording
       ALLOWED_HOSTS: dvwa
+      BUILD_ID: ${BUILD_ID}
+      WALLARM_API_HOST: 51.68.93.197
+      WALLARM_API_PORT: 9752
+      WALLARM_API_USE_SSL: "false"
+      WALLARM_API_CA_VERIFY: "false"
     networks:
       main:
         aliases:
