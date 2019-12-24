@@ -10,8 +10,6 @@ services:
 
   selenium:
     image: selenium/standalone-firefox:latest
-    logging:
-      driver: none
     environment:
       http_proxy: http://fast:8080
     networks:
