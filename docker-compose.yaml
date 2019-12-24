@@ -4,7 +4,7 @@ services:
   dvwa:
     image: wallarm/fast-example-dvwa-base
     networks:
-      main:
+      my_test1:
         aliases:
           - dvwa
 
@@ -15,11 +15,13 @@ services:
     environment:
       http_proxy: http://fast:8080
     networks:
-      main:
+      my_test1:
         aliases:
           - selenium
 
   test:
     image: wallarm/fast-example-dvwa-tests
     networks:
-      main:
+      my_test1:
+        aliases:
+          - test_container_alias
