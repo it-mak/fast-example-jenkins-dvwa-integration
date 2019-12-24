@@ -25,3 +25,5 @@ services:
       my_test1:
         aliases:
           - test_container_alias
+networks:
+  my_test1:
