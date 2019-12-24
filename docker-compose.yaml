@@ -11,7 +11,7 @@ services:
   selenium:
     image: selenium/standalone-firefox:latest
     environment:
-      http_proxy: http://fast123:8080
+      http_proxy: http://fast123:3128
     networks:
       my_test1:
         aliases:
