@@ -39,6 +39,3 @@ services:
     image: wallarm/fast-example-dvwa-tests
     networks:
       main:
-
-networks:
-  main:
